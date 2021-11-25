@@ -1,0 +1,12 @@
+C:\Users\ThinkPad\Desktop\cursos\dotnet\api\ProAgil.Repository\bin\Debug\netstandard2.1\ProAgil.Repository.deps.json
+C:\Users\ThinkPad\Desktop\cursos\dotnet\api\ProAgil.Repository\bin\Debug\netstandard2.1\ProAgil.Repository.dll
+C:\Users\ThinkPad\Desktop\cursos\dotnet\api\ProAgil.Repository\bin\Debug\netstandard2.1\ProAgil.Repository.pdb
+C:\Users\ThinkPad\Desktop\cursos\dotnet\api\ProAgil.Repository\bin\Debug\netstandard2.1\ProAgil.Domain.dll
+C:\Users\ThinkPad\Desktop\cursos\dotnet\api\ProAgil.Repository\bin\Debug\netstandard2.1\ProAgil.Domain.pdb
+C:\Users\ThinkPad\Desktop\cursos\dotnet\api\ProAgil.Repository\obj\Debug\netstandard2.1\ProAgil.Repository.csprojAssemblyReference.cache
+C:\Users\ThinkPad\Desktop\cursos\dotnet\api\ProAgil.Repository\obj\Debug\netstandard2.1\ProAgil.Repository.AssemblyInfoInputs.cache
+C:\Users\ThinkPad\Desktop\cursos\dotnet\api\ProAgil.Repository\obj\Debug\netstandard2.1\ProAgil.Repository.AssemblyInfo.cs
+C:\Users\ThinkPad\Desktop\cursos\dotnet\api\ProAgil.Repository\obj\Debug\netstandard2.1\ProAgil.Repository.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPad\Desktop\cursos\dotnet\api\ProAgil.Repository\obj\Debug\netstandard2.1\ProAgil.Repository.csproj.CopyComplete
+C:\Users\ThinkPad\Desktop\cursos\dotnet\api\ProAgil.Repository\obj\Debug\netstandard2.1\ProAgil.Repository.dll
+C:\Users\ThinkPad\Desktop\cursos\dotnet\api\ProAgil.Repository\obj\Debug\netstandard2.1\ProAgil.Repository.pdb

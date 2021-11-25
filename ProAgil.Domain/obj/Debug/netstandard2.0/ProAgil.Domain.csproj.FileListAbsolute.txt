@@ -1,0 +1,9 @@
+C:\Users\ThinkPad\Desktop\cursos\dotnet\api\ProAgil.Domain\bin\Debug\netstandard2.0\ProAgil.Domain.deps.json
+C:\Users\ThinkPad\Desktop\cursos\dotnet\api\ProAgil.Domain\bin\Debug\netstandard2.0\ProAgil.Domain.dll
+C:\Users\ThinkPad\Desktop\cursos\dotnet\api\ProAgil.Domain\bin\Debug\netstandard2.0\ProAgil.Domain.pdb
+C:\Users\ThinkPad\Desktop\cursos\dotnet\api\ProAgil.Domain\obj\Debug\netstandard2.0\ProAgil.Domain.csprojAssemblyReference.cache
+C:\Users\ThinkPad\Desktop\cursos\dotnet\api\ProAgil.Domain\obj\Debug\netstandard2.0\ProAgil.Domain.AssemblyInfoInputs.cache
+C:\Users\ThinkPad\Desktop\cursos\dotnet\api\ProAgil.Domain\obj\Debug\netstandard2.0\ProAgil.Domain.AssemblyInfo.cs
+C:\Users\ThinkPad\Desktop\cursos\dotnet\api\ProAgil.Domain\obj\Debug\netstandard2.0\ProAgil.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPad\Desktop\cursos\dotnet\api\ProAgil.Domain\obj\Debug\netstandard2.0\ProAgil.Domain.dll
+C:\Users\ThinkPad\Desktop\cursos\dotnet\api\ProAgil.Domain\obj\Debug\netstandard2.0\ProAgil.Domain.pdb
