@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ProAgil.Domain;
 using ProAgil.Repository;
+using ProjAgil.Webapi.Command;
 using ProjAgil.Webapi.Dtos;
 
 namespace ProjAgil.Webapi.Controllers
@@ -17,28 +18,26 @@ namespace ProjAgil.Webapi.Controllers
     [ApiController]
     public class EventoController : ControllerBase
     {
-        private readonly IProAgilRespository _repo;
-        private readonly IMapper _mapper;
-        public EventoController(IProAgilRespository repo, IMapper mapper)
+        private readonly IMediator _mediator;
+
+        public EventoController(IMediator mediator)
         {
-            _mapper = mapper;
-            _repo = repo;
+            _mediator = mediator;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get([FromQuery] GetAllEventosCommand evento)
         {
             try
             {
-                var eventos = await _repo.GetAllEventoAsync(true);
-                var results = _mapper.Map<EventoDto[]>(eventos);
-                return Ok(results);
+                return Ok(await _mediator.Send(evento));
             }
             catch (System.Exception)
             {
                 return this.StatusCode(StatusCodes.Status500InternalServerError, "Banco de dados falhou !");
             }
         }
+        /*
 
         [HttpPost("upload")]
         public async Task<IActionResult> upload()
@@ -97,19 +96,15 @@ namespace ProjAgil.Webapi.Controllers
                 return this.StatusCode(StatusCodes.Status500InternalServerError, "Banco de dados falhou !");
             }
         }
-
+        */
         [HttpPost]
-        public async Task<IActionResult> Post(EventoDto model)
+        public async Task<IActionResult> Post([FromBody]PostEventoCommand command)
         {
             try
             {
-                var evento = _mapper.Map<Evento>(model);
-                _repo.Add(evento);
-
-                if (await _repo.SaveChangesAsync())
-                {
-                    return Created($"/api/evento/{model.Id}", _mapper.Map<Evento>(evento));
-                }
+                var evento = await _mediator.Send(command);
+                Created($"/api/evento/{evento.Id}", evento);
+               
             }
             catch (System.Exception)
             {
@@ -118,6 +113,8 @@ namespace ProjAgil.Webapi.Controllers
 
             return BadRequest();
         }
+
+        /*
 
         [HttpPut("{EventoId}")]
         public async Task<IActionResult> Put(int EventoId, Evento model)
@@ -183,5 +180,6 @@ namespace ProjAgil.Webapi.Controllers
 
             return BadRequest();
         }
+        */
     }
 }

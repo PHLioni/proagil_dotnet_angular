@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ProAgil.Repository",
+    "\\ProjAgil.Webapi",
+    "\\ProjAgil.Webapi\\Command",
+    "\\ProjAgil.Webapi\\Controllers",
+    "\\ProjAgil.Webapi\\Dtos",
+    "\\ProjAgil.Webapi\\Handler"
+  ],
+  "SelectedNode": "\\ProAgil.Repository\\ProAgilRepository.cs",
+  "PreviewInSolutionExplorer": false
+}

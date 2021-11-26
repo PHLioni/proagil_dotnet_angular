@@ -187,11 +187,11 @@
             },
             "MediatR": {
               "target": "Package",
-              "version": "[3.0.1, )"
+              "version": "[9.0.0, )"
             },
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",

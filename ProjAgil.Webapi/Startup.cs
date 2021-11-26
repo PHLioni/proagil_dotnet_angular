@@ -25,6 +25,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using ProAgil.Domain.Identity;
 using ProAgil.Repository;
+using ProjAgil.Webapi.Command;
 
 namespace ProjAgil.Webapi
 {
@@ -88,7 +89,9 @@ namespace ProjAgil.Webapi
                     opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
                 });
                 
-            services.AddMediatR(Assembly.GetExecutingAssembly());
+            services.AddMediatR(typeof(Startup));
+            services.AddMediatR(typeof(GetAllEventosCommand).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(PostEventoCommand).GetTypeInfo().Assembly);
             services.AddControllers();
             services.AddScoped<IProAgilRespository, ProAgilRepository>();
             services.AddAutoMapper();
